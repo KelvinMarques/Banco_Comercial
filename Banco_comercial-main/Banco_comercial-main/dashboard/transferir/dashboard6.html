@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_dash6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <script src="dash6.js"></script>
+    <div class="primary">
+        <div class="primary_1">
+            <img id="logo" src="/dashboard/imagens/W 1 (1).png" id="logo" alt="logo" width="50px" height="40px">
+            <h1 class="wiseinvest">WiseInvest</h1>
+        </div>
+        <div class="primary_2">
+            <button type="button" id="btn_access">Acessar outra conta</button>
+        </div>
+    </div>
+    <div class="second">
+        <p class="hello">Olá, Usuario<br>
+            Conta 0000-01/ Agencia 0000</p>
+    </div><br>
+    <div class="third">
+        <div class="third_1" onclick="extrato()">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/money-check-edit (2) 1.png" alt="money-check-edit"
+                    width="20px">
+            </div>
+            <p class="paragraf_box">Extrato</p>
+        </div>
+        <div class="third_1" onclick="pagar()">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/Vector.png" alt="Vector" width="20px">
+            </div>
+            <p class="paragraf_box">Pagar</p>
+        </div>
+        <div class="third_1" onclick="transferir()">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/Vector (1).png" alt="Vector" width="20px">
+            </div>
+            <p class="paragraf_box">Transferir</p>
+        </div>
+        <div class="third_1" onclick="investir()">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/funnel-dollar 1.png" alt="funnel-dollar" width="15px">
+            </div>
+            <p class="paragraf_box">Investir</p>
+        </div>
+        <div class="third_1" onclick="emprestimo()">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/Vector (2).png" alt="Vector" width="15px">
+            </div>
+            <p class="paragraf_box">Empréstimo</p>
+        </div>
+        <div class="third_1">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/Vector (3).png" alt="Vector" width="20px">
+            </div>
+            <p class="paragraf_box" onclick="">Recarga</p>
+        </div>
+        <div class="third_1">
+            <div class="circle">
+                <img class="image_box" src="/dashboard/imagens/shopping-cart 1.png" alt="shopping-cart" width="20px">
+            </div>
+            <p class="paragraf_box" onclick="">WiseShop</p>
+        </div>
+    </div><br>
+    <div class="general">
+        <div class="fourth">
+            <div class="fourth_div"">
+                <div class=" data_div">
+                <img class="images_fourth" src="/dashboard/imagens/uil_user.png" alt="uil_user">
+            </div>
+            <p class="text_fourth" onclick="dados()"">Meus Dados</p>
+                <div class=" row_div">
+                <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="/dashboard/imagens/uil_sliders-v.png" alt="uil_sliders-v">
+        </div>
+        <p class="text_fourth" onclick="configurarApp()">Configurar App</p>
+        <div class="row_div">
+            <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="/dashboard/imagens/Vector (5).png" alt="Vector">
+        </div>
+        <p class="text_fourth" onclick="saldo()">Saldo</p>
+        <div class="row_div">
+            <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="/dashboard/imagens/Vector (6).png" alt="Vector">
+        </div>
+        <p class="text_fourth" onclick="notificacoes()">Notificações</p>
+        <div class="row_div">
+            <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="/dashboard/imagens/Vector (7).png" alt="Vector">
+        </div>
+        <p class="text_fourth" onclick="configuracoes()">Configurações</p>
+        <div class="row_div">
+            <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="/dashboard/imagens/Vector (8).png" alt="Vector">
+        </div>
+        <p class="text_fourth" onclick="cartoes()">Cartões</p>
+        <div class="row_div">
+            <img src="/dashboard/imagens/Vector (4).png" alt="Vector">
+        </div>
+    </div>
+    </div>
+    <div id="div_pagar">
+        <div class="pagar_conta">
+            <h1 id="texto_pagar">Para qual conta você deseja transferir?</h1>
+            <div class="codigo">
+                <p class="digite_codigo">Digite o número da conta</p>
+                <input type="number" class="input_codigo" placeholder="0000-01"><br><br>
+                <button type="submit" class="btn_transferir">Transferir</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/tela de login//imagens_login/register (2).png');
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.marca{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_primary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 2em;
+    margin: auto;
+}
+
+.second_images{
+    flex-shrink: 1;
+}
+
+#logo{
+    width: fit-content;
+    height: 50px;
+}
+
+#name{
+    color: #1B424C;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#name_2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+#paragraf{
+    max-width: 500px;
+    color: #424545;
+    font-size: 20px;
+}
+
+#man{
+    width: fit-content;
+    height: 294px;
+}
+
+#woman{
+    width: fit-content;
+    height: 297px;
+}
+
+
+#acess{
+    color: black;
+    font-size: 30px;
+}
+
+#forgot_password{
+    text-decoration: none;
+    color: #1A035A;
+    align-self: end;
+}
+
+#forgot_password:hover{
+    text-decoration: underline;
+    text-decoration-color: #1A035A;
+    text-decoration-style: solid;
+}
+
+#button_submit{
+    border-radius: 55px;
+    border: none;
+    background: rgba(255, 255, 255, 0.90);
+    color: #2A6877;
+}
+
+#login,
+#password{
+    color: #152F36;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form{
+    background-color: #BECBCE;
+    border-radius: 15px 0px 0px 15px;
+    stroke: rgba(0, 0, 0, 0.27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    justify-content: space-between;
+}
+
+.inputs_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.login_form,
+.form_password{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+
+#input_password,
+#input_email{
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    background: #E8EFE1;
+    font-size: 15px;
+    padding: 0.8em;
+    justify-self: start;
+}
+
+#button_submit{
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 17px;
+    font-family: sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#button_submit:hover{
+    transform: scale(1.05);
+}
+
+#havent_account{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#create_account{
+    border-radius: 55px;
+    border: none;
+    background: #255A67;
+    color: white;
+    font-size: 17px;
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#create_account:hover{
+    transform: scale(1.05);
+}
+
+.account_form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Estilos existentes */
+/* ... */
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 0; /* Adiciona espaçamento vertical */
+    }
+
+    .div_primary {
+        width: 90%;
+        margin: 1em auto; /* Centraliza o conteúdo verticalmente */
+    }
+
+    #name {
+        font-size: 30px; /* Reduz um pouco mais o tamanho do nome */
+    }
+
+    #name_2 {
+        font-size: 12px; /* Reduz ainda mais o tamanho do subtítulo */
+    }
+
+    #paragraf {
+        max-width: 100%;
+        font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+        line-height: 1.5; /* Melhora a legibilidade */
+        text-align: center;
+        margin-bottom: 2em; /* Adiciona espaço abaixo do parágrafo */
+    }
+
+    #man,
+    #woman {
+        width: 80%;
+        max-width: 200px; /* Reduz ainda mais o tamanho das imagens secundárias */
+        margin: 1em auto; /* Centraliza as imagens */
+    }
+
+    form {
+        padding: 1.5em;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao formulário */
+    }
+
+    .inputs_form {
+        gap: 1.2em; /* Ajusta o espaçamento entre os campos de entrada */
+    }
+
+    #input_password,
+    #input_email {
+        width: 100%;
+        font-size: 13px; /* Reduz ainda mais o tamanho da fonte nos campos de entrada */
+        padding: 0.6em;
+    }
+
+    #button_submit,
+    #create_account {
+        font-size: 13px;
+        height: 32px; /* Reduz um pouco mais a altura dos botões */
+        letter-spacing: 0.5px; /* Melhora a legibilidade */
+    }
+
+    #forgot_password {
+        font-size: 12px; /* Reduz o tamanho da fonte para link de esqueceu a senha */
+    }
+
+    .account_form {
+        font-size: 12px; /* Reduz o tamanho da fonte do texto de criar conta */
+    }
+}
+

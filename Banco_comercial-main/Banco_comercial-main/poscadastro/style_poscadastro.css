@@ -1,0 +1,55 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(/poscadastro/imagens/register\ \(2\).png);
+    scroll-behavior: smooth;
+}
+
+* {
+    overflow: hidden;
+}
+
+h1 {
+    color: #242121;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 16px;
+}
+
+img.image {
+    width: 20%;
+    max-width: 200px;
+    opacity: 1;
+
+    transition: all .5s ease-in-out;
+}
+
+img.image:last-child {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+img.image:first-child {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.text_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    img.image {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,149 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-image: url('/tela de cadastro//imagens_cadastro/login (2).png');
+}
+
+.logo_marca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#wiseinvest{
+    color: #1B424C;
+    font-size: 20px;
+    line-height: 2px;
+}
+
+.cadastro{
+    width: 300px;
+    font-size: 15px;
+}
+
+.div_cadastro{
+    display: flex;
+    border-radius: 24px;
+    background: #F1F1F1;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.div_general{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    background: #ffffff;
+    padding: 5px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#informacoes_registro{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#botao{
+    height: 35px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    background: #2A6877;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+#botao:hover{
+    transform: scale(1.05);
+}
+
+#imagem1{
+    width: 280px;
+}
+
+#imagem2{
+    width: 300px;
+}
+
+#usuario_icone,
+#calendario,
+#envelope_icone,
+#telefone_icone,
+#cadeado_1,
+#cadeado_2,
+#pasta_icone,
+#pasta_cpf,
+#mapa{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 8px;
+}
+
+.input{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .div_general {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagem1, #imagem2 {
+        width: 200px;
+    }
+
+    .div_cadastro {
+        width: 90%; /* Reduz a largura do formulário */
+        padding: 1rem; /* Reduz o padding */
+    }
+
+    input {
+        width: 100%; /* Ocupa a largura disponível */
+    }
+
+    #informacoes_registro {
+        text-align: center;
+    }
+
+    .logo_marca {
+        margin-bottom: 1rem;
+    }
+
+    .input {
+        align-items: center;
+    }
+
+    #usuario_icone,
+    #calendario,
+    #envelope_icone,
+    #telefone_icone,
+    #cadeado_1,
+    #cadeado_2,
+    #pasta_icone,
+    #pasta_cpf,
+    #mapa {
+        right: 0; /* Ajusta o posicionamento dos ícones */
+    }
+}

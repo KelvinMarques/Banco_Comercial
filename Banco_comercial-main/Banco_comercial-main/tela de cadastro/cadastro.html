@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Registro</title>
+    <script src="app3.js" defer>
+
+    </script>
+</head>
+
+<body>
+    <div class="logo_marca">
+        <img src="/tela de cadastro/imagens_cadastro/W 1.png" id="logo" alt="logo" width="50px">
+        <h1 id="wiseinvest">WiseInvest Bank</h1>
+    </div>
+    <h2 id="informacoes_registro">Faça seu registro preenchendo as informações abaixo:</h2>
+    <div class="div_general">
+        <img src="imagens_cadastro/Component 1.png" id="imagem1" alt="pessoa no celular">
+        <div class="div_cadastro">
+            <form id="form">
+                <div class="inputs">
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/user (1) 1.png" id="usuario_icone" alt="usuario">
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/envelope 1.png" id="envelope_icone" alt="envelope">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/phone-call 1.png" id="telefone_icone"
+                            alt="telefone">
+                        <input type="phone" name="tel" id="telefone" placeholder="Telefone" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/lock 1.png" id="cadeado_1" alt="cadeado">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/lock 3.png" id="cadeado_2" alt="cadeado">
+                        <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirmar Senha" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/folder 1.png" id="pasta_icone" alt="pasta">
+                        <input type="number" name="rg" id="rg" placeholder="RG" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/memo-circle-check 1.png" id="pasta_cpf"
+                            alt="pasta">
+                        <input type="number" name="cpf" id="cpf" placeholder="CPF" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/calendar 1.png" id="calendario" alt="calendario">
+                        <input type="date" name="data" id="data" placeholder="Data de Nascimento" required>
+                    </div>
+                    <div class="input">
+                        <img src="/tela de cadastro/imagens_cadastro/map-marker 1.png" id="mapa" alt="mapa">
+                        <input type="number" name="cep" id="cep" placeholder="CEP" required>
+                    </div>
+                </div>
+                <button type="submit" id="botao">Enviar Dados</button>
+            </form>
+        </div>
+        <img src="imagens_cadastro/Component 2.png" id="imagem2" alt="pessoa no computador">
+    </div>
+</body>
+
+</html>
