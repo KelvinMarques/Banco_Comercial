@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/css/cartao.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <script src="{% static 'dashboard/js/cartao.js' %}"></script>
+    <div class="primary">
+        <div class="primary_1">
+            <img id="logo" src="{% static 'dashboard/img/W 1 (1).png'%}" id="logo" alt="logo" width="50px" height="40px">
+            <h1 class="wiseinvest">WiseInvest</h1>
+        </div>
+        <div class="primary_2">
+            <button type="button" id="btn_access">Acessar outra conta</button>
+        </div>
+    </div>
+    <div class="second">
+        <p class="hello">Olá, Usuario<br>
+            Conta 0000-01/ Agencia 0000</p>
+    </div><br>
+    <div class="third">
+        <div class="third_1">
+            <a href="{% url 'dashboard:extrato_view' %}">
+                <div class="circle">
+                    <img class="image_box" src="{% static 'dashboard/img/money-check-edit (2) 1.png'%}" alt="money-check-edit" width="20px">
+                </div>
+                <p class="paragraf_box">Extrato</p>
+            </a>
+        </div>
+        <div class="third_1">
+            <a href="{% url 'dashboard:pagar_view' %}">
+                <div class="circle">
+                    <img class="image_box" src="{% static 'dashboard/img/Vector.png'%}" alt="Vector" width="20px">
+                </div>
+                <p class="paragraf_box">Pagar</p>
+            </a>
+        </div>
+        
+        <div class="third_1">
+            <a href="{% url 'dashboard:transferir_view' %}">
+                <div class="circle">
+                    <img class="image_box" src="{% static 'dashboard/img/Vector (1).png'%}" alt="Vector" width="20px">
+                </div>
+                <p class="paragraf_box">Transferir</p>
+            </a>
+        </div>
+        
+        <div class="third_1">
+            <a href="{% url 'dashboard:investir_view' %}">
+                <div class="circle">
+                    <img class="image_box" src="{% static 'dashboard/img/funnel-dollar 1.png'%}" alt="funnel-dollar" width="15px">
+                </div>
+                <p class="paragraf_box">Investir</p>
+            </a>
+        </div>
+        
+        <div class="third_1">
+            <a href="#"><!-- Adicione a URL desejada para Recarga -->
+                <div class="circle">
+                    <img class="image_box" src="{% static 'dashboard/img/Vector (3).png'%}" alt="Vector" width="20px">
+                </div>
+                <p class="paragraf_box">Recarga</p>
+            </a>
+        </div>
+        <div class="third_1">
+            <div class="circle">
+                <img class="image_box" src="{% static 'dashboard/img/Vector (3).png'%}" alt="Vector" width="20px">
+            </div>
+            <p class="paragraf_box" onclick="">Recarga</p>
+        </div>
+        <div class="third_1">
+            <div class="circle">
+                <img class="image_box" src="{% static 'dashboard/img/shopping-cart 1.png'%}" alt="shopping-cart" width="20px">
+            </div>
+            <p class="paragraf_box" onclick="">WiseShop</p>
+        </div>
+    </div><br>
+    <div class="general">
+        <div class="fourth">
+            <div class="fourth_div"">
+                <div class=" data_div">
+                <img class="images_fourth" src="{% static 'dashboard/img/uil_user.png'%}" alt="uil_user">
+            </div>
+            <a href="{% url 'dashboard:dados_view' %}">
+                <p class="text_fourth" onclick="dados()">Meus Dados</p>
+                <div class=" row_div">
+                <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+            </a>
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="{% static 'dashboard/img/uil_sliders-v.png'%}" alt="uil_sliders-v">
+        </div>
+        <a href="{% url 'dashboard:configuracoes_view' %}">
+            <p class="text_fourth" onclick="configurarApp()">Configurar App</p></a>
+            <div class="row_div">
+                <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+            </div>
+    </div>
+    <div class="fourth_div">
+       
+            <div class="data_div">
+                <img class="images_fourth" src="{% static 'dashboard/img/Vector (5).png'%}" alt="Vector">
+            </div>
+            <a href="{% url 'dashboard:saldo_view' %}">
+            <p class="text_fourth">Saldo</p></a>
+            <div class="row_div">
+                <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+            </div>
+        
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="{% static 'dashboard/img/Vector (6).png'%}" alt="Vector">
+        </div>
+        <a href="{% url 'dashboard:notificacoes_view' %}">
+        <p class="text_fourth" onclick="notificacoes()">Notificações</p></a>
+        <div class="row_div">
+            <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="{% static 'dashboard/img/Vector (7).png'%}" alt="Vector">
+        </div>
+        <a href="{% url 'dashboard:configuracoes_view' %}">
+        <p class="text_fourth" onclick="configuracoes()">Configurações</p></a>
+        <div class="row_div">
+            <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+        </div>
+    </div>
+    <div class="fourth_div">
+        <div class="data_div">
+            <img class="images_fourth" src="{% static 'dashboard/img/Vector (8).png'%}" alt="Vector">
+        </div>
+        <a href="{% url 'dashboard:cartoes_view' %}">
+        <p class="text_fourth" onclick="cartoes()">Cartões</p></a>
+        <div class="row_div">
+            <img src="{% static 'dashboard/img/Vector (4).png'%}" alt="Vector">
+        </div>
+    </div>
+    </div>
+    <div class="general_cartao">
+        <div class="cartao_debito">
+            <p>Cartão de Débito</p>
+            <div class="debito">
+                <p>WiseDebit</p>
+                <p>0000 0000 0000 0000</p>
+                <p>Geovani</p>
+                <p>Data de vencimento:</p>
+            </div>
+            <button class="bloquear_cartao">Bloquear Cartão</button>
+        </div>
+        <div class="cartao_credito">
+            <p>Cartão de Crédito</p>
+            <div class="credito">
+                <p>WiseCredit</p>
+                <p>0000 0000 0000 0000</p>
+                <p>Geovani</p>
+                <p>Data de vencimento:</p>
+            </div>
+            <button class="bloquear_cartao">Bloquear Cartão</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
